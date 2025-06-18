@@ -1,0 +1,450 @@
+0 verbose cli /usr/bin/node /usr/bin/npm
+1 info using npm@9.2.0
+2 info using node@v20.19.0
+3 timing npm:load:whichnode Completed in 0ms
+4 timing config:load:defaults Completed in 4ms
+5 timing config:load:file:/usr/share/nodejs/npm/npmrc Completed in 15ms
+6 timing config:load:builtin Completed in 15ms
+7 timing config:load:cli Completed in 4ms
+8 timing config:load:env Completed in 1ms
+9 timing config:load:project Completed in 6ms
+10 timing config:load:file:/root/.npmrc Completed in 1ms
+11 timing config:load:user Completed in 1ms
+12 timing config:load:file:/etc/npmrc Completed in 0ms
+13 timing config:load:global Completed in 1ms
+14 timing config:load:setEnvs Completed in 3ms
+15 timing config:load Completed in 37ms
+16 timing npm:load:configload Completed in 37ms
+17 timing npm:load:mkdirpcache Completed in 5ms
+18 timing npm:load:mkdirplogs Completed in 1ms
+19 verbose title npm i shx
+20 verbose argv "i" "--global" "shx"
+21 timing npm:load:setTitle Completed in 3ms
+22 timing config:load:flatten Completed in 5ms
+23 timing npm:load:display Completed in 7ms
+24 verbose logfile logs-max:10 dir:/root/.npm/_logs/2025-06-03T18_45_58_252Z-
+25 verbose logfile /root/.npm/_logs/2025-06-03T18_45_58_252Z-debug-0.log
+26 timing npm:load:logFile Completed in 16ms
+27 timing npm:load:timers Completed in 1ms
+28 timing npm:load:configScope Completed in 0ms
+29 timing npm:load Completed in 71ms
+30 timing config:load:flatten Completed in 1ms
+31 timing arborist:ctor Completed in 1ms
+32 silly logfile done cleaning log files
+33 timing idealTree:init Completed in 8ms
+34 timing idealTree:userRequests Completed in 9ms
+35 silly idealTree buildDeps
+36 silly fetch manifest shx@*
+37 http fetch GET 200 https://registry.npmjs.org/shx 430ms (cache miss)
+38 silly placeDep ROOT shx@0.4.0 OK for:  want: *
+39 silly fetch manifest minimist@^1.2.8
+40 silly fetch manifest shelljs@^0.9.2
+41 http fetch GET 200 https://registry.npmjs.org/minimist 61ms (cache miss)
+42 http fetch GET 200 https://registry.npmjs.org/shelljs 148ms (cache miss)
+43 timing idealTree:#root Completed in 604ms
+44 silly placeDep node_modules/shx minimist@1.2.8 OK for: shx@0.4.0 want: ^1.2.8
+45 silly placeDep node_modules/shx shelljs@0.9.2 OK for: shx@0.4.0 want: ^0.9.2
+46 silly fetch manifest execa@^1.0.0
+47 silly fetch manifest rechoir@^0.6.2
+48 silly fetch manifest fast-glob@^3.3.2
+49 silly fetch manifest interpret@^1.0.0
+50 http fetch GET 200 https://registry.npmjs.org/rechoir 54ms (cache miss)
+51 http fetch GET 200 https://registry.npmjs.org/execa 71ms (cache miss)
+52 http fetch GET 200 https://registry.npmjs.org/fast-glob 146ms (cache miss)
+53 http fetch GET 200 https://registry.npmjs.org/interpret 154ms (cache miss)
+54 timing idealTree:node_modules/shx Completed in 169ms
+55 timing idealTree:node_modules/shx/node_modules/minimist Completed in 0ms
+56 silly placeDep node_modules/shx execa@1.0.0 OK for: shelljs@0.9.2 want: ^1.0.0
+57 silly placeDep node_modules/shx fast-glob@3.3.3 OK for: shelljs@0.9.2 want: ^3.3.2
+58 silly placeDep node_modules/shx interpret@1.4.0 OK for: shelljs@0.9.2 want: ^1.0.0
+59 silly placeDep node_modules/shx rechoir@0.6.2 OK for: shelljs@0.9.2 want: ^0.6.2
+60 silly fetch manifest is-stream@^1.1.0
+61 silly fetch manifest p-finally@^1.0.0
+62 silly fetch manifest strip-eof@^1.0.0
+63 silly fetch manifest get-stream@^4.0.0
+64 silly fetch manifest cross-spawn@^6.0.0
+65 silly fetch manifest signal-exit@^3.0.0
+66 silly fetch manifest npm-run-path@^2.0.0
+67 silly fetch manifest @nodelib/fs.stat@^2.0.2
+68 silly fetch manifest @nodelib/fs.walk@^1.2.3
+69 silly fetch manifest glob-parent@^5.1.2
+70 silly fetch manifest merge2@^1.3.0
+71 silly fetch manifest micromatch@^4.0.8
+72 silly fetch manifest resolve@^1.1.6
+73 http fetch GET 200 https://registry.npmjs.org/p-finally 78ms (cache miss)
+74 http fetch GET 200 https://registry.npmjs.org/strip-eof 80ms (cache miss)
+75 http fetch GET 200 https://registry.npmjs.org/get-stream 81ms (cache miss)
+76 http fetch GET 200 https://registry.npmjs.org/is-stream 85ms (cache miss)
+77 http fetch GET 200 https://registry.npmjs.org/npm-run-path 121ms (cache miss)
+78 http fetch GET 200 https://registry.npmjs.org/signal-exit 124ms (cache miss)
+79 http fetch GET 200 https://registry.npmjs.org/glob-parent 147ms (cache miss)
+80 http fetch GET 200 https://registry.npmjs.org/merge2 148ms (cache miss)
+81 http fetch GET 200 https://registry.npmjs.org/@nodelib%2ffs.stat 150ms (cache miss)
+82 http fetch GET 200 https://registry.npmjs.org/cross-spawn 156ms (cache miss)
+83 http fetch GET 200 https://registry.npmjs.org/resolve 170ms (cache miss)
+84 http fetch GET 200 https://registry.npmjs.org/@nodelib%2ffs.walk 178ms (cache miss)
+85 http fetch GET 200 https://registry.npmjs.org/micromatch 209ms (cache miss)
+86 timing idealTree:node_modules/shx/node_modules/shelljs Completed in 230ms
+87 silly placeDep node_modules/shx cross-spawn@6.0.6 OK for: execa@1.0.0 want: ^6.0.0
+88 silly placeDep node_modules/shx get-stream@4.1.0 OK for: execa@1.0.0 want: ^4.0.0
+89 silly placeDep node_modules/shx is-stream@1.1.0 OK for: execa@1.0.0 want: ^1.1.0
+90 silly placeDep node_modules/shx npm-run-path@2.0.2 OK for: execa@1.0.0 want: ^2.0.0
+91 silly placeDep node_modules/shx p-finally@1.0.0 OK for: execa@1.0.0 want: ^1.0.0
+92 silly placeDep node_modules/shx signal-exit@3.0.7 OK for: execa@1.0.0 want: ^3.0.0
+93 silly placeDep node_modules/shx strip-eof@1.0.0 OK for: execa@1.0.0 want: ^1.0.0
+94 silly fetch manifest nice-try@^1.0.4
+95 silly fetch manifest path-key@^2.0.1
+96 silly fetch manifest semver@^5.5.0
+97 silly fetch manifest shebang-command@^1.2.0
+98 silly fetch manifest which@^1.2.9
+99 silly fetch manifest pump@^3.0.0
+100 silly fetch manifest path-key@^2.0.0
+101 http fetch GET 200 https://registry.npmjs.org/path-key 56ms (cache miss)
+102 http fetch GET 200 https://registry.npmjs.org/which 75ms (cache miss)
+103 http fetch GET 200 https://registry.npmjs.org/path-key 81ms (cache miss)
+104 http fetch GET 200 https://registry.npmjs.org/shebang-command 81ms (cache miss)
+105 http fetch GET 200 https://registry.npmjs.org/pump 80ms (cache miss)
+106 http fetch GET 200 https://registry.npmjs.org/semver 84ms (cache miss)
+107 http fetch GET 200 https://registry.npmjs.org/nice-try 87ms (cache miss)
+108 timing idealTree:node_modules/shx/node_modules/execa Completed in 103ms
+109 silly placeDep node_modules/shx nice-try@1.0.5 OK for: cross-spawn@6.0.6 want: ^1.0.4
+110 silly placeDep node_modules/shx path-key@2.0.1 OK for: cross-spawn@6.0.6 want: ^2.0.1
+111 silly placeDep node_modules/shx semver@5.7.2 OK for: cross-spawn@6.0.6 want: ^5.5.0
+112 silly placeDep node_modules/shx shebang-command@1.2.0 OK for: cross-spawn@6.0.6 want: ^1.2.0
+113 silly placeDep node_modules/shx which@1.3.1 OK for: cross-spawn@6.0.6 want: ^1.2.9
+114 silly fetch manifest shebang-regex@^1.0.0
+115 silly fetch manifest isexe@^2.0.0
+116 http fetch GET 200 https://registry.npmjs.org/isexe 56ms (cache miss)
+117 http fetch GET 200 https://registry.npmjs.org/shebang-regex 58ms (cache miss)
+118 timing idealTree:node_modules/shx/node_modules/cross-spawn Completed in 66ms
+119 silly placeDep node_modules/shx @nodelib/fs.stat@2.0.5 OK for: fast-glob@3.3.3 want: ^2.0.2
+120 silly placeDep node_modules/shx @nodelib/fs.walk@1.2.8 OK for: fast-glob@3.3.3 want: ^1.2.3
+121 silly placeDep node_modules/shx glob-parent@5.1.2 OK for: fast-glob@3.3.3 want: ^5.1.2
+122 silly placeDep node_modules/shx merge2@1.4.1 OK for: fast-glob@3.3.3 want: ^1.3.0
+123 silly placeDep node_modules/shx micromatch@4.0.8 OK for: fast-glob@3.3.3 want: ^4.0.8
+124 silly fetch manifest fastq@^1.6.0
+125 silly fetch manifest @nodelib/fs.scandir@2.1.5
+126 silly fetch manifest is-glob@^4.0.1
+127 silly fetch manifest braces@^3.0.3
+128 silly fetch manifest picomatch@^2.3.1
+129 http fetch GET 200 https://registry.npmjs.org/picomatch 80ms (cache miss)
+130 http fetch GET 200 https://registry.npmjs.org/is-glob 84ms (cache miss)
+131 http fetch GET 200 https://registry.npmjs.org/braces 84ms (cache miss)
+132 http fetch GET 200 https://registry.npmjs.org/fastq 89ms (cache miss)
+133 http fetch GET 200 https://registry.npmjs.org/@nodelib%2ffs.scandir 89ms (cache miss)
+134 timing idealTree:node_modules/shx/node_modules/fast-glob Completed in 100ms
+135 timing idealTree:node_modules/shx/node_modules/@nodelib/fs.stat Completed in 0ms
+136 silly placeDep node_modules/shx @nodelib/fs.scandir@2.1.5 OK for: @nodelib/fs.walk@1.2.8 want: 2.1.5
+137 silly placeDep node_modules/shx fastq@1.19.1 OK for: @nodelib/fs.walk@1.2.8 want: ^1.6.0
+138 silly fetch manifest run-parallel@^1.1.9
+139 silly fetch manifest reusify@^1.0.4
+140 http fetch GET 200 https://registry.npmjs.org/run-parallel 63ms (cache miss)
+141 http fetch GET 200 https://registry.npmjs.org/reusify 66ms (cache miss)
+142 timing idealTree:node_modules/shx/node_modules/@nodelib/fs.walk Completed in 71ms
+143 silly placeDep node_modules/shx run-parallel@1.2.0 OK for: @nodelib/fs.scandir@2.1.5 want: ^1.1.9
+144 silly fetch manifest queue-microtask@^1.2.2
+145 http fetch GET 200 https://registry.npmjs.org/queue-microtask 63ms (cache miss)
+146 timing idealTree:node_modules/shx/node_modules/@nodelib/fs.scandir Completed in 67ms
+147 silly placeDep node_modules/shx reusify@1.1.0 OK for: fastq@1.19.1 want: ^1.0.4
+148 timing idealTree:node_modules/shx/node_modules/fastq Completed in 2ms
+149 silly placeDep node_modules/shx pump@3.0.2 OK for: get-stream@4.1.0 want: ^3.0.0
+150 silly fetch manifest once@^1.3.1
+151 silly fetch manifest end-of-stream@^1.1.0
+152 http fetch GET 200 https://registry.npmjs.org/end-of-stream 58ms (cache miss)
+153 http fetch GET 200 https://registry.npmjs.org/once 60ms (cache miss)
+154 timing idealTree:node_modules/shx/node_modules/get-stream Completed in 63ms
+155 silly placeDep node_modules/shx is-glob@4.0.3 OK for: glob-parent@5.1.2 want: ^4.0.1
+156 silly fetch manifest is-extglob@^2.1.1
+157 http fetch GET 200 https://registry.npmjs.org/is-extglob 65ms (cache miss)
+158 timing idealTree:node_modules/shx/node_modules/glob-parent Completed in 68ms
+159 timing idealTree:node_modules/shx/node_modules/interpret Completed in 0ms
+160 silly placeDep node_modules/shx is-extglob@2.1.1 OK for: is-glob@4.0.3 want: ^2.1.1
+161 timing idealTree:node_modules/shx/node_modules/is-glob Completed in 2ms
+162 timing idealTree:node_modules/shx/node_modules/is-extglob Completed in 0ms
+163 timing idealTree:node_modules/shx/node_modules/is-stream Completed in 0ms
+164 timing idealTree:node_modules/shx/node_modules/merge2 Completed in 0ms
+165 silly placeDep node_modules/shx braces@3.0.3 OK for: micromatch@4.0.8 want: ^3.0.3
+166 silly placeDep node_modules/shx picomatch@2.3.1 OK for: micromatch@4.0.8 want: ^2.3.1
+167 silly fetch manifest fill-range@^7.1.1
+168 http fetch GET 200 https://registry.npmjs.org/fill-range 88ms (cache miss)
+169 timing idealTree:node_modules/shx/node_modules/micromatch Completed in 92ms
+170 silly placeDep node_modules/shx fill-range@7.1.1 OK for: braces@3.0.3 want: ^7.1.1
+171 silly fetch manifest to-regex-range@^5.0.1
+172 http fetch GET 200 https://registry.npmjs.org/to-regex-range 68ms (cache miss)
+173 timing idealTree:node_modules/shx/node_modules/braces Completed in 72ms
+174 silly placeDep node_modules/shx to-regex-range@5.0.1 OK for: fill-range@7.1.1 want: ^5.0.1
+175 silly fetch manifest is-number@^7.0.0
+176 http fetch GET 200 https://registry.npmjs.org/is-number 64ms (cache miss)
+177 timing idealTree:node_modules/shx/node_modules/fill-range Completed in 70ms
+178 timing idealTree:node_modules/shx/node_modules/nice-try Completed in 0ms
+179 timing idealTree:node_modules/shx/node_modules/npm-run-path Completed in 0ms
+180 timing idealTree:node_modules/shx/node_modules/p-finally Completed in 0ms
+181 timing idealTree:node_modules/shx/node_modules/path-key Completed in 0ms
+182 timing idealTree:node_modules/shx/node_modules/picomatch Completed in 0ms
+183 silly placeDep node_modules/shx end-of-stream@1.4.4 OK for: pump@3.0.2 want: ^1.1.0
+184 silly placeDep node_modules/shx once@1.4.0 OK for: pump@3.0.2 want: ^1.3.1
+185 silly fetch manifest wrappy@1
+186 http fetch GET 200 https://registry.npmjs.org/wrappy 62ms (cache miss)
+187 timing idealTree:node_modules/shx/node_modules/pump Completed in 67ms
+188 timing idealTree:node_modules/shx/node_modules/end-of-stream Completed in 0ms
+189 silly placeDep node_modules/shx wrappy@1.0.2 OK for: once@1.4.0 want: 1
+190 timing idealTree:node_modules/shx/node_modules/once Completed in 3ms
+191 silly placeDep node_modules/shx resolve@1.22.10 OK for: rechoir@0.6.2 want: ^1.1.6
+192 silly fetch manifest is-core-module@^2.16.0
+193 silly fetch manifest path-parse@^1.0.7
+194 silly fetch manifest supports-preserve-symlinks-flag@^1.0.0
+195 http fetch GET 200 https://registry.npmjs.org/path-parse 58ms (cache miss)
+196 http fetch GET 200 https://registry.npmjs.org/supports-preserve-symlinks-flag 60ms (cache miss)
+197 http fetch GET 200 https://registry.npmjs.org/is-core-module 74ms (cache miss)
+198 timing idealTree:node_modules/shx/node_modules/rechoir Completed in 78ms
+199 silly placeDep node_modules/shx is-core-module@2.16.1 OK for: resolve@1.22.10 want: ^2.16.0
+200 silly placeDep node_modules/shx path-parse@1.0.7 OK for: resolve@1.22.10 want: ^1.0.7
+201 silly placeDep node_modules/shx supports-preserve-symlinks-flag@1.0.0 OK for: resolve@1.22.10 want: ^1.0.0
+202 silly fetch manifest hasown@^2.0.2
+203 http fetch GET 200 https://registry.npmjs.org/hasown 67ms (cache miss)
+204 timing idealTree:node_modules/shx/node_modules/resolve Completed in 73ms
+205 silly placeDep node_modules/shx hasown@2.0.2 OK for: is-core-module@2.16.1 want: ^2.0.2
+206 silly fetch manifest function-bind@^1.1.2
+207 http fetch GET 200 https://registry.npmjs.org/function-bind 64ms (cache miss)
+208 timing idealTree:node_modules/shx/node_modules/is-core-module Completed in 68ms
+209 silly placeDep node_modules/shx function-bind@1.1.2 OK for: hasown@2.0.2 want: ^1.1.2
+210 timing idealTree:node_modules/shx/node_modules/hasown Completed in 3ms
+211 timing idealTree:node_modules/shx/node_modules/function-bind Completed in 0ms
+212 timing idealTree:node_modules/shx/node_modules/path-parse Completed in 0ms
+213 timing idealTree:node_modules/shx/node_modules/reusify Completed in 0ms
+214 silly placeDep node_modules/shx queue-microtask@1.2.3 OK for: run-parallel@1.2.0 want: ^1.2.2
+215 timing idealTree:node_modules/shx/node_modules/run-parallel Completed in 2ms
+216 timing idealTree:node_modules/shx/node_modules/queue-microtask Completed in 0ms
+217 timing idealTree:node_modules/shx/node_modules/semver Completed in 0ms
+218 silly placeDep node_modules/shx shebang-regex@1.0.0 OK for: shebang-command@1.2.0 want: ^1.0.0
+219 timing idealTree:node_modules/shx/node_modules/shebang-command Completed in 2ms
+220 timing idealTree:node_modules/shx/node_modules/shebang-regex Completed in 0ms
+221 timing idealTree:node_modules/shx/node_modules/signal-exit Completed in 0ms
+222 timing idealTree:node_modules/shx/node_modules/strip-eof Completed in 0ms
+223 timing idealTree:node_modules/shx/node_modules/supports-preserve-symlinks-flag Completed in 0ms
+224 silly placeDep node_modules/shx is-number@7.0.0 OK for: to-regex-range@5.0.1 want: ^7.0.0
+225 timing idealTree:node_modules/shx/node_modules/to-regex-range Completed in 2ms
+226 timing idealTree:node_modules/shx/node_modules/is-number Completed in 0ms
+227 silly placeDep node_modules/shx isexe@2.0.0 OK for: which@1.3.1 want: ^2.0.0
+228 timing idealTree:node_modules/shx/node_modules/which Completed in 2ms
+229 timing idealTree:node_modules/shx/node_modules/isexe Completed in 0ms
+230 timing idealTree:node_modules/shx/node_modules/wrappy Completed in 0ms
+231 timing idealTree:buildDeps Completed in 2087ms
+232 timing idealTree:fixDepFlags Completed in 2ms
+233 timing idealTree Completed in 2107ms
+234 timing reify:loadTrees Completed in 2110ms
+235 timing reify:diffTrees Completed in 4ms
+236 silly reify moves {}
+237 timing reify:retireShallow Completed in 2ms
+238 timing reify:createSparse Completed in 13ms
+239 timing reify:loadBundles Completed in 0ms
+240 silly tarball no local data for isexe@https://registry.npmjs.org/isexe/-/isexe-2.0.0.tgz. Extracting by manifest.
+241 silly tarball no local data for is-number@https://registry.npmjs.org/is-number/-/is-number-7.0.0.tgz. Extracting by manifest.
+242 silly tarball no local data for function-bind@https://registry.npmjs.org/function-bind/-/function-bind-1.1.2.tgz. Extracting by manifest.
+243 silly tarball no local data for hasown@https://registry.npmjs.org/hasown/-/hasown-2.0.2.tgz. Extracting by manifest.
+244 silly tarball no local data for queue-microtask@https://registry.npmjs.org/queue-microtask/-/queue-microtask-1.2.3.tgz. Extracting by manifest.
+245 silly tarball no local data for supports-preserve-symlinks-flag@https://registry.npmjs.org/supports-preserve-symlinks-flag/-/supports-preserve-symlinks-flag-1.0.0.tgz. Extracting by manifest.
+246 silly tarball no local data for shebang-regex@https://registry.npmjs.org/shebang-regex/-/shebang-regex-1.0.0.tgz. Extracting by manifest.
+247 silly tarball no local data for is-core-module@https://registry.npmjs.org/is-core-module/-/is-core-module-2.16.1.tgz. Extracting by manifest.
+248 silly tarball no local data for shx@https://registry.npmjs.org/shx/-/shx-0.4.0.tgz. Extracting by manifest.
+249 silly tarball no local data for wrappy@https://registry.npmjs.org/wrappy/-/wrappy-1.0.2.tgz. Extracting by manifest.
+250 silly tarball no local data for once@https://registry.npmjs.org/once/-/once-1.4.0.tgz. Extracting by manifest.
+251 silly tarball no local data for resolve@https://registry.npmjs.org/resolve/-/resolve-1.22.10.tgz. Extracting by manifest.
+252 silly tarball no local data for end-of-stream@https://registry.npmjs.org/end-of-stream/-/end-of-stream-1.4.4.tgz. Extracting by manifest.
+253 silly tarball no local data for fill-range@https://registry.npmjs.org/fill-range/-/fill-range-7.1.1.tgz. Extracting by manifest.
+254 silly tarball no local data for picomatch@https://registry.npmjs.org/picomatch/-/picomatch-2.3.1.tgz. Extracting by manifest.
+255 silly tarball no local data for braces@https://registry.npmjs.org/braces/-/braces-3.0.3.tgz. Extracting by manifest.
+256 silly tarball no local data for to-regex-range@https://registry.npmjs.org/to-regex-range/-/to-regex-range-5.0.1.tgz. Extracting by manifest.
+257 silly tarball no local data for is-extglob@https://registry.npmjs.org/is-extglob/-/is-extglob-2.1.1.tgz. Extracting by manifest.
+258 silly tarball no local data for is-glob@https://registry.npmjs.org/is-glob/-/is-glob-4.0.3.tgz. Extracting by manifest.
+259 silly tarball no local data for pump@https://registry.npmjs.org/pump/-/pump-3.0.2.tgz. Extracting by manifest.
+260 silly tarball no local data for fastq@https://registry.npmjs.org/fastq/-/fastq-1.19.1.tgz. Extracting by manifest.
+261 silly tarball no local data for reusify@https://registry.npmjs.org/reusify/-/reusify-1.1.0.tgz. Extracting by manifest.
+262 silly tarball no local data for run-parallel@https://registry.npmjs.org/run-parallel/-/run-parallel-1.2.0.tgz. Extracting by manifest.
+263 silly tarball no local data for @nodelib/fs.scandir@https://registry.npmjs.org/@nodelib/fs.scandir/-/fs.scandir-2.1.5.tgz. Extracting by manifest.
+264 silly tarball no local data for micromatch@https://registry.npmjs.org/micromatch/-/micromatch-4.0.8.tgz. Extracting by manifest.
+265 silly tarball no local data for merge2@https://registry.npmjs.org/merge2/-/merge2-1.4.1.tgz. Extracting by manifest.
+266 silly tarball no local data for glob-parent@https://registry.npmjs.org/glob-parent/-/glob-parent-5.1.2.tgz. Extracting by manifest.
+267 silly tarball no local data for @nodelib/fs.stat@https://registry.npmjs.org/@nodelib/fs.stat/-/fs.stat-2.0.5.tgz. Extracting by manifest.
+268 silly tarball no local data for @nodelib/fs.walk@https://registry.npmjs.org/@nodelib/fs.walk/-/fs.walk-1.2.8.tgz. Extracting by manifest.
+269 silly tarball no local data for which@https://registry.npmjs.org/which/-/which-1.3.1.tgz. Extracting by manifest.
+270 silly tarball no local data for shebang-command@https://registry.npmjs.org/shebang-command/-/shebang-command-1.2.0.tgz. Extracting by manifest.
+271 silly tarball no local data for semver@https://registry.npmjs.org/semver/-/semver-5.7.2.tgz. Extracting by manifest.
+272 silly tarball no local data for path-key@https://registry.npmjs.org/path-key/-/path-key-2.0.1.tgz. Extracting by manifest.
+273 silly tarball no local data for path-parse@https://registry.npmjs.org/path-parse/-/path-parse-1.0.7.tgz. Extracting by manifest.
+274 silly tarball no local data for nice-try@https://registry.npmjs.org/nice-try/-/nice-try-1.0.5.tgz. Extracting by manifest.
+275 silly tarball no local data for strip-eof@https://registry.npmjs.org/strip-eof/-/strip-eof-1.0.0.tgz. Extracting by manifest.
+276 silly tarball no local data for signal-exit@https://registry.npmjs.org/signal-exit/-/signal-exit-3.0.7.tgz. Extracting by manifest.
+277 silly tarball no local data for npm-run-path@https://registry.npmjs.org/npm-run-path/-/npm-run-path-2.0.2.tgz. Extracting by manifest.
+278 silly tarball no local data for p-finally@https://registry.npmjs.org/p-finally/-/p-finally-1.0.0.tgz. Extracting by manifest.
+279 silly tarball no local data for is-stream@https://registry.npmjs.org/is-stream/-/is-stream-1.1.0.tgz. Extracting by manifest.
+280 silly tarball no local data for get-stream@https://registry.npmjs.org/get-stream/-/get-stream-4.1.0.tgz. Extracting by manifest.
+281 silly tarball no local data for cross-spawn@https://registry.npmjs.org/cross-spawn/-/cross-spawn-6.0.6.tgz. Extracting by manifest.
+282 silly tarball no local data for interpret@https://registry.npmjs.org/interpret/-/interpret-1.4.0.tgz. Extracting by manifest.
+283 silly tarball no local data for fast-glob@https://registry.npmjs.org/fast-glob/-/fast-glob-3.3.3.tgz. Extracting by manifest.
+284 silly tarball no local data for execa@https://registry.npmjs.org/execa/-/execa-1.0.0.tgz. Extracting by manifest.
+285 silly tarball no local data for shelljs@https://registry.npmjs.org/shelljs/-/shelljs-0.9.2.tgz. Extracting by manifest.
+286 silly tarball no local data for minimist@https://registry.npmjs.org/minimist/-/minimist-1.2.8.tgz. Extracting by manifest.
+287 silly tarball no local data for rechoir@https://registry.npmjs.org/rechoir/-/rechoir-0.6.2.tgz. Extracting by manifest.
+288 http fetch GET 200 https://registry.npmjs.org/is-number/-/is-number-7.0.0.tgz 222ms (cache miss)
+289 timing reifyNode:node_modules/shx/node_modules/is-number Completed in 259ms
+290 http fetch GET 200 https://registry.npmjs.org/queue-microtask/-/queue-microtask-1.2.3.tgz 240ms (cache miss)
+291 timing reifyNode:node_modules/shx/node_modules/queue-microtask Completed in 281ms
+292 http fetch GET 200 https://registry.npmjs.org/hasown/-/hasown-2.0.2.tgz 242ms (cache miss)
+293 timing reifyNode:node_modules/shx/node_modules/hasown Completed in 281ms
+294 http fetch GET 200 https://registry.npmjs.org/wrappy/-/wrappy-1.0.2.tgz 235ms (cache miss)
+295 timing reifyNode:node_modules/shx/node_modules/wrappy Completed in 281ms
+296 http fetch GET 200 https://registry.npmjs.org/end-of-stream/-/end-of-stream-1.4.4.tgz 235ms (cache miss)
+297 timing reifyNode:node_modules/shx/node_modules/end-of-stream Completed in 287ms
+298 http fetch GET 200 https://registry.npmjs.org/isexe/-/isexe-2.0.0.tgz 254ms (cache miss)
+299 timing reifyNode:node_modules/shx/node_modules/isexe Completed in 288ms
+300 http fetch GET 200 https://registry.npmjs.org/once/-/once-1.4.0.tgz 240ms (cache miss)
+301 timing reifyNode:node_modules/shx/node_modules/once Completed in 288ms
+302 http fetch GET 200 https://registry.npmjs.org/shebang-regex/-/shebang-regex-1.0.0.tgz 255ms (cache miss)
+303 timing reifyNode:node_modules/shx/node_modules/shebang-regex Completed in 297ms
+304 http fetch GET 200 https://registry.npmjs.org/supports-preserve-symlinks-flag/-/supports-preserve-symlinks-flag-1.0.0.tgz 266ms (cache miss)
+305 http fetch GET 200 https://registry.npmjs.org/function-bind/-/function-bind-1.1.2.tgz 284ms (cache miss)
+306 timing reifyNode:node_modules/shx/node_modules/supports-preserve-symlinks-flag Completed in 329ms
+307 http fetch GET 200 https://registry.npmjs.org/is-glob/-/is-glob-4.0.3.tgz 264ms (cache miss)
+308 timing reifyNode:node_modules/shx/node_modules/is-glob Completed in 330ms
+309 http fetch GET 200 https://registry.npmjs.org/is-extglob/-/is-extglob-2.1.1.tgz 272ms (cache miss)
+310 timing reifyNode:node_modules/shx/node_modules/is-extglob Completed in 335ms
+311 http fetch GET 200 https://registry.npmjs.org/braces/-/braces-3.0.3.tgz 275ms (cache miss)
+312 http fetch GET 200 https://registry.npmjs.org/pump/-/pump-3.0.2.tgz 270ms (cache miss)
+313 timing reifyNode:node_modules/shx/node_modules/pump Completed in 336ms
+314 timing reifyNode:node_modules/shx/node_modules/function-bind Completed in 345ms
+315 http fetch GET 200 https://registry.npmjs.org/run-parallel/-/run-parallel-1.2.0.tgz 280ms (cache miss)
+316 timing reifyNode:node_modules/shx/node_modules/run-parallel Completed in 350ms
+317 timing reifyNode:node_modules/shx/node_modules/braces Completed in 356ms
+318 http fetch GET 200 https://registry.npmjs.org/merge2/-/merge2-1.4.1.tgz 285ms (cache miss)
+319 timing reifyNode:node_modules/shx/node_modules/merge2 Completed in 357ms
+320 http fetch GET 200 https://registry.npmjs.org/is-core-module/-/is-core-module-2.16.1.tgz 331ms (cache miss)
+321 timing reifyNode:node_modules/shx/node_modules/is-core-module Completed in 373ms
+322 http fetch GET 200 https://registry.npmjs.org/to-regex-range/-/to-regex-range-5.0.1.tgz 311ms (cache miss)
+323 timing reifyNode:node_modules/shx/node_modules/to-regex-range Completed in 373ms
+324 http fetch GET 200 https://registry.npmjs.org/glob-parent/-/glob-parent-5.1.2.tgz 300ms (cache miss)
+325 timing reifyNode:node_modules/shx/node_modules/glob-parent Completed in 374ms
+326 http fetch GET 200 https://registry.npmjs.org/which/-/which-1.3.1.tgz 306ms (cache miss)
+327 timing reifyNode:node_modules/shx/node_modules/which Completed in 382ms
+328 http fetch GET 200 https://registry.npmjs.org/shebang-command/-/shebang-command-1.2.0.tgz 306ms (cache miss)
+329 timing reifyNode:node_modules/shx/node_modules/shebang-command Completed in 383ms
+330 http fetch GET 200 https://registry.npmjs.org/p-finally/-/p-finally-1.0.0.tgz 298ms (cache miss)
+331 timing reifyNode:node_modules/shx/node_modules/p-finally Completed in 387ms
+332 http fetch GET 200 https://registry.npmjs.org/reusify/-/reusify-1.1.0.tgz 320ms (cache miss)
+333 http fetch GET 200 https://registry.npmjs.org/path-key/-/path-key-2.0.1.tgz 307ms (cache miss)
+334 timing reifyNode:node_modules/shx/node_modules/path-key Completed in 390ms
+335 http fetch GET 200 https://registry.npmjs.org/nice-try/-/nice-try-1.0.5.tgz 305ms (cache miss)
+336 timing reifyNode:node_modules/shx/node_modules/nice-try Completed in 391ms
+337 http fetch GET 200 https://registry.npmjs.org/npm-run-path/-/npm-run-path-2.0.2.tgz 303ms (cache miss)
+338 timing reifyNode:node_modules/shx/node_modules/npm-run-path Completed in 391ms
+339 http fetch GET 200 https://registry.npmjs.org/shx/-/shx-0.4.0.tgz 352ms (cache miss)
+340 timing reifyNode:node_modules/shx Completed in 398ms
+341 http fetch GET 200 https://registry.npmjs.org/fill-range/-/fill-range-7.1.1.tgz 338ms (cache miss)
+342 timing reifyNode:node_modules/shx/node_modules/fill-range Completed in 396ms
+343 http fetch GET 200 https://registry.npmjs.org/path-parse/-/path-parse-1.0.7.tgz 313ms (cache miss)
+344 timing reifyNode:node_modules/shx/node_modules/path-parse Completed in 399ms
+345 http fetch GET 200 https://registry.npmjs.org/signal-exit/-/signal-exit-3.0.7.tgz 311ms (cache miss)
+346 timing reifyNode:node_modules/shx/node_modules/signal-exit Completed in 398ms
+347 http fetch GET 200 https://registry.npmjs.org/strip-eof/-/strip-eof-1.0.0.tgz 314ms (cache miss)
+348 timing reifyNode:node_modules/shx/node_modules/strip-eof Completed in 401ms
+349 timing reifyNode:node_modules/shx/node_modules/reusify Completed in 403ms
+350 http fetch GET 200 https://registry.npmjs.org/fastq/-/fastq-1.19.1.tgz 336ms (cache miss)
+351 http fetch GET 200 https://registry.npmjs.org/interpret/-/interpret-1.4.0.tgz 316ms (cache miss)
+352 timing reifyNode:node_modules/shx/node_modules/interpret Completed in 408ms
+353 http fetch GET 200 https://registry.npmjs.org/cross-spawn/-/cross-spawn-6.0.6.tgz 317ms (cache miss)
+354 http fetch GET 200 https://registry.npmjs.org/is-stream/-/is-stream-1.1.0.tgz 318ms (cache miss)
+355 timing reifyNode:node_modules/shx/node_modules/is-stream Completed in 408ms
+356 timing reifyNode:node_modules/shx/node_modules/fastq Completed in 409ms
+357 timing reifyNode:node_modules/shx/node_modules/cross-spawn Completed in 410ms
+358 http fetch GET 200 https://registry.npmjs.org/micromatch/-/micromatch-4.0.8.tgz 340ms (cache miss)
+359 timing reifyNode:node_modules/shx/node_modules/micromatch Completed in 412ms
+360 http fetch GET 200 https://registry.npmjs.org/get-stream/-/get-stream-4.1.0.tgz 322ms (cache miss)
+361 timing reifyNode:node_modules/shx/node_modules/get-stream Completed in 413ms
+362 http fetch GET 200 https://registry.npmjs.org/execa/-/execa-1.0.0.tgz 321ms (cache miss)
+363 timing reifyNode:node_modules/shx/node_modules/execa Completed in 414ms
+364 http fetch GET 200 https://registry.npmjs.org/@nodelib/fs.stat/-/fs.stat-2.0.5.tgz 341ms (cache miss)
+365 http fetch GET 200 https://registry.npmjs.org/rechoir/-/rechoir-0.6.2.tgz 320ms (cache miss)
+366 timing reifyNode:node_modules/shx/node_modules/rechoir Completed in 416ms
+367 http fetch GET 200 https://registry.npmjs.org/semver/-/semver-5.7.2.tgz 340ms (cache miss)
+368 timing reifyNode:node_modules/shx/node_modules/semver Completed in 419ms
+369 timing reifyNode:node_modules/shx/node_modules/@nodelib/fs.stat Completed in 419ms
+370 http fetch GET 200 https://registry.npmjs.org/@nodelib/fs.scandir/-/fs.scandir-2.1.5.tgz 354ms (cache miss)
+371 timing reifyNode:node_modules/shx/node_modules/@nodelib/fs.scandir Completed in 428ms
+372 http fetch GET 200 https://registry.npmjs.org/@nodelib/fs.walk/-/fs.walk-1.2.8.tgz 353ms (cache miss)
+373 timing reifyNode:node_modules/shx/node_modules/@nodelib/fs.walk Completed in 430ms
+374 http fetch GET 200 https://registry.npmjs.org/minimist/-/minimist-1.2.8.tgz 338ms (cache miss)
+375 timing reifyNode:node_modules/shx/node_modules/minimist Completed in 435ms
+376 http fetch GET 200 https://registry.npmjs.org/picomatch/-/picomatch-2.3.1.tgz 375ms (cache miss)
+377 timing reifyNode:node_modules/shx/node_modules/picomatch Completed in 435ms
+378 http fetch GET 200 https://registry.npmjs.org/shelljs/-/shelljs-0.9.2.tgz 367ms (cache miss)
+379 timing reifyNode:node_modules/shx/node_modules/shelljs Completed in 461ms
+380 http fetch GET 200 https://registry.npmjs.org/fast-glob/-/fast-glob-3.3.3.tgz 372ms (cache miss)
+381 timing reifyNode:node_modules/shx/node_modules/fast-glob Completed in 465ms
+382 http fetch GET 200 https://registry.npmjs.org/resolve/-/resolve-1.22.10.tgz 433ms (cache miss)
+383 timing reifyNode:node_modules/shx/node_modules/resolve Completed in 483ms
+384 timing reify:unpack Completed in 485ms
+385 timing reify:unretire Completed in 0ms
+386 timing build:queue Completed in 4ms
+387 timing build:link:node_modules/shx/node_modules/shelljs Completed in 3ms
+388 timing build:link:node_modules/shx/node_modules/resolve Completed in 4ms
+389 timing build:link:node_modules/shx/node_modules/which Completed in 4ms
+390 timing build:link:node_modules/shx/node_modules/semver Completed in 4ms
+391 timing build:link:node_modules/shx Completed in 8ms
+392 timing build:link Completed in 8ms
+393 timing build:deps Completed in 12ms
+394 timing build Completed in 12ms
+395 timing reify:build Completed in 13ms
+396 timing reify:trash Completed in 0ms
+397 timing reify Completed in 2637ms
+398 silly ADD node_modules/shx
+399 silly ADD node_modules/shx/node_modules/isexe
+400 silly ADD node_modules/shx/node_modules/is-number
+401 silly ADD node_modules/shx/node_modules/shebang-regex
+402 silly ADD node_modules/shx/node_modules/queue-microtask
+403 silly ADD node_modules/shx/node_modules/function-bind
+404 silly ADD node_modules/shx/node_modules/hasown
+405 silly ADD node_modules/shx/node_modules/supports-preserve-symlinks-flag
+406 silly ADD node_modules/shx/node_modules/path-parse
+407 silly ADD node_modules/shx/node_modules/is-core-module
+408 silly ADD node_modules/shx/node_modules/resolve
+409 silly ADD node_modules/shx/node_modules/wrappy
+410 silly ADD node_modules/shx/node_modules/once
+411 silly ADD node_modules/shx/node_modules/end-of-stream
+412 silly ADD node_modules/shx/node_modules/to-regex-range
+413 silly ADD node_modules/shx/node_modules/fill-range
+414 silly ADD node_modules/shx/node_modules/picomatch
+415 silly ADD node_modules/shx/node_modules/braces
+416 silly ADD node_modules/shx/node_modules/is-extglob
+417 silly ADD node_modules/shx/node_modules/is-glob
+418 silly ADD node_modules/shx/node_modules/pump
+419 silly ADD node_modules/shx/node_modules/reusify
+420 silly ADD node_modules/shx/node_modules/run-parallel
+421 silly ADD node_modules/shx/node_modules/fastq
+422 silly ADD node_modules/shx/node_modules/@nodelib/fs.scandir
+423 silly ADD node_modules/shx/node_modules/micromatch
+424 silly ADD node_modules/shx/node_modules/merge2
+425 silly ADD node_modules/shx/node_modules/glob-parent
+426 silly ADD node_modules/shx/node_modules/@nodelib/fs.walk
+427 silly ADD node_modules/shx/node_modules/@nodelib/fs.stat
+428 silly ADD node_modules/shx/node_modules/which
+429 silly ADD node_modules/shx/node_modules/shebang-command
+430 silly ADD node_modules/shx/node_modules/semver
+431 silly ADD node_modules/shx/node_modules/path-key
+432 silly ADD node_modules/shx/node_modules/nice-try
+433 silly ADD node_modules/shx/node_modules/strip-eof
+434 silly ADD node_modules/shx/node_modules/signal-exit
+435 silly ADD node_modules/shx/node_modules/p-finally
+436 silly ADD node_modules/shx/node_modules/npm-run-path
+437 silly ADD node_modules/shx/node_modules/is-stream
+438 silly ADD node_modules/shx/node_modules/get-stream
+439 silly ADD node_modules/shx/node_modules/cross-spawn
+440 silly ADD node_modules/shx/node_modules/rechoir
+441 silly ADD node_modules/shx/node_modules/interpret
+442 silly ADD node_modules/shx/node_modules/fast-glob
+443 silly ADD node_modules/shx/node_modules/execa
+444 silly ADD node_modules/shx/node_modules/shelljs
+445 silly ADD node_modules/shx/node_modules/minimist
+446 timing command:i Completed in 2644ms
+447 verbose exit 0
+448 timing npm Completed in 2736ms
+449 info ok
