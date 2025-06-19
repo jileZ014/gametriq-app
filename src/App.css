@@ -1,0 +1,147 @@
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em rgba(100, 108, 255, 0.8));
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em rgba(97, 218, 251, 0.8));
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.08);
+}
+
+.read-the-docs {
+  color: #888;
+  font-size: 0.875rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Button glow effect */
+.btn-glow {
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.btn-glow:hover {
+  box-shadow: 0 0 15px rgba(66, 153, 225, 0.5);
+}
+
+/* Coach-specific styling */
+.coach-theme .btn-primary {
+  background: linear-gradient(to right, #0055CC, #0078FF);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border: none;
+  box-shadow: 0 4px 10px rgba(0, 85, 204, 0.2);
+}
+
+.coach-theme .btn-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 15px rgba(0, 85, 204, 0.3);
+}
+
+.coach-cards .modern-card {
+  border-left: 3px solid #3b82f6;
+}
+
+/* Parent-specific styling */
+.parent-theme .btn-primary {
+  background: linear-gradient(to right, #00875A, #00A86B);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border: none;
+  box-shadow: 0 4px 10px rgba(0, 135, 90, 0.2);
+}
+
+.parent-theme .btn-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 15px rgba(0, 135, 90, 0.3);
+}
+
+.parent-cards .modern-card {
+  border-left: 3px solid #10b981;
+}
+
+/* Default button style (fallback) */
+.btn-primary {
+  background: linear-gradient(to right, #0078FF, #00A3FF);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border: none;
+  box-shadow: 0 4px 10px rgba(0, 120, 255, 0.2);
+}
+
+.btn-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 15px rgba(0, 120, 255, 0.3);
+}
+
+/* Bright sports theme styling */
+body {
+  background-color: #f8fafc !important;
+}
+
+.coach-theme, .parent-theme {
+  background-color: #f8fafc !important;
+}
+
+/* Ensure Chatbase widget displays properly */
+#chatbase-bubble-button {
+  z-index: 1000 !important;
+  display: block !important;
+}

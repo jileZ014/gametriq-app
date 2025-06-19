@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/lovable-uploads/580daa8d-e5c4-4112-ab12-2d74a54a0915.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gametriq - Track. Compete. Win.</title>
+    <meta name="description" content="Track basketball stats for your team and players with Gametriq. The ultimate basketball stat tracking app for coaches and parents." />
+    <script>
+      if (window.location.hostname === "gametriq.com") {
+        const newURL = window.location.href.replace("gametriq.com", "www.gametriq.com");
+        window.location.replace(newURL);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+    <script type="module" src="/src/main.tsx"></script>
+    <!-- Hidden div to add and configure chatbase bot -->
+    <div id="chatbase-config" style="display:none;">
+      <script>
+        window.chatbaseConfig = {
+          chatbotId: "YourChatbotID",
+          domain: "www.chatbase.co",
+          title: "Welcome to Gametriq",
+          close_bubble_when_clicked_outside: true,
+          close_bubble_button: true
+        };
+      </script>
+    </div>
+  </body>
+</html>
